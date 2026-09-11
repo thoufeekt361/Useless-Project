@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Porotta Layer Analyzer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="bg-orb orb-one"></div>
+    <div class="bg-orb orb-two"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">🥞</span>
+            <span>Porotta<span class="logo-highlight">AI</span></span>
+        </div>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#analyzer">Analyzer</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#history">History</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#analyzer" class="nav-button">
+            Analyze Now
+        </a>
+    </header>
+
+
+    <!-- HOME -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span class="pulse"></span>
+                    AI Inspired Food Analysis
+                </div>
+
+                <h1>
+                    How Many Layers
+                    <span>Does Your Porotta Have?</span>
+                </h1>
+
+                <p class="hero-description">
+                    Upload a photo of your porotta and discover its
+                    estimated layers, dimensions, quality and analysis
+                    accuracy.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#analyzer" class="primary-button">
+                        🔬 Analyze My Porotta
+                    </a>
+
+                    <a href="#how-it-works" class="secondary-button">
+                        How it works →
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>3+</strong>
+                        <span>Measurements</span>
+                    </div>
+
+                    <div>
+                        <strong>AI</strong>
+                        <span>Visual Analysis</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>History Records</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CSS POROTTA -->
+            <div class="hero-visual">
+
+                <div class="floating-card card-top">
+                    <span>Layers</span>
+                    <strong>32</strong>
+                </div>
+
+                <div class="porotta-container">
+
+                    <div class="porotta-shadow"></div>
+
+                    <div class="porotta">
+                        <div class="layer layer-1"></div>
+                        <div class="layer layer-2"></div>
+                        <div class="layer layer-3"></div>
+                        <div class="layer layer-4"></div>
+                        <div class="layer layer-5"></div>
+                        <div class="layer layer-6"></div>
+
+                        <div class="porotta-center"></div>
+                    </div>
+
+                    <div class="scan-ring"></div>
+                    <div class="scan-ring ring-2"></div>
+
+                </div>
+
+                <div class="floating-card card-bottom">
+                    <span>Quality</span>
+                    <strong>Excellent</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANALYZER -->
+        <section id="analyzer" class="section analyzer-section">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    <span>01</span> POROTTA ANALYZER
+                </div>
+
+                <h2>
+                    Upload & Analyze
+                </h2>
+
+                <p>
+                    Upload one or more porotta photos and let the analyzer
+                    estimate their characteristics.
+                </p>
+
+            </div>
+
+
+            <div class="analyzer-layout">
+
+                <!-- Upload panel -->
+                <div class="upload-panel">
+
+                    <div class="upload-icon">
+                        📸
+                    </div>
+
+                    <h3>Upload Porotta Photo</h3>
+
+                    <p>
+                        Select a clear image of your porotta.
+                    </p>
+
+                    <label for="photoInput" class="upload-button">
+                        Choose Photo
+                    </label>
+
+                    <input
+                        type="file"
+                        id="photoInput"
+                        accept="image/*"
+                        hidden
+                    >
+
+                    <p class="file-info">
+                        JPG, JPEG, PNG • Max 10 MB
+                    </p>
+
+                    <button id="anotherPhotoBtn" class="another-button">
+                        ＋ Upload Another Photo
+                    </button>
+
+                </div>
+
+
+                <!-- Preview -->
+                <div class="preview-panel">
+
+                    <div class="panel-title">
+                        <span>Uploaded Photos</span>
+                        <span id="photoCount">0 photos</span>
+                    </div>
+
+                    <div id="previewGrid" class="preview-grid">
+
+                        <div class="empty-preview">
+                            <div>🥞</div>
+                            <p>Your uploaded porottas will appear here</p>
+                        </div>
+
+                    </div>
+
+                    <button id="analyzeBtn" class="analyze-button" disabled>
+                        <span>🔍</span>
+                        Analyze Porotta
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CURRENT RESULT -->
+            <div id="resultSection" class="result-section hidden">
+
+                <div class="result-header">
+                    <div>
+                        <div class="section-label">
+                            ANALYSIS RESULT
+                        </div>
+
+                        <h2>Your Porotta Analysis</h2>
+                    </div>
+
+                    <div class="result-status">
+                        ● Analysis Complete
+                    </div>
+                </div>
+
+
+                <div class="result-grid">
+
+                    <div class="result-image-card">
+
+                        <div class="image-container">
+                            <img id="resultImage" src="" alt="Porotta">
+                            <div class="image-scan"></div>
+                        </div>
+
+                        <div class="image-name" id="resultName">
+                            porotta.jpg
+                        </div>
+
+                    </div>
+
+
+                    <div class="metrics">
+
+                        <div class="metric-card main-metric">
+                            <span class="metric-icon">🥞</span>
+                            <div>
+                                <small>Estimated Layers</small>
+                                <strong id="layerResult">32</strong>
+                            </div>
+                            <span class="metric-unit">layers</span>
+                        </div>
+
+
+                        <div class="metric-row">
+
+                            <div class="metric-card">
+                                <span class="metric-icon">📏</span>
+                                <div>
+                                    <small>Diameter</small>
+                                    <strong id="diameterResult">18.4 cm</strong>
+                                </div>
+                            </div>
+
+                            <div class="metric-card">
+                                <span class="metric-icon">↕️</span>
+                                <div>
+                                    <small>Thickness</small>
+                                    <strong id="thicknessResult">1.8 cm</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="metric-card">
+
+                            <span class="metric-icon">📐</span>
+
+                            <div class="dimension-content">
+                                <small>Estimated Dimensions</small>
+
+                                <strong id="dimensionResult">
+                                    18.4 × 18.4 cm
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="quality-card">
+
+                            <div>
+                                <small>Analysis Accuracy</small>
+
+                                <div class="accuracy-bar">
+                                    <div id="accuracyBar"></div>
+                                </div>
+                            </div>
+
+                            <strong id="accuracyResult">92%</strong>
+
+                        </div>
+
+
+                        <div class="quality-result">
+
+                            <div class="quality-icon">
+                                ✓
+                            </div>
+
+                            <div>
+                                <small>Porotta Quality</small>
+                                <strong id="qualityResult">
+                                    Excellent
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+        <section id="how-it-works" class="section how-section">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    <span>02</span> PROCESS
+                </div>
+
+                <h2>
+                    How It Works
+                </h2>
+
+                <p>
+                    A simple visual analysis workflow from photo to result.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step-card">
+
+                    <div class="step-number">01</div>
+
+                    <div class="step-icon">📷</div>
+
+                    <h3>Upload</h3>
+
+                    <p>
+                        Upload a clear photo of your porotta.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">02</div>
+
+                    <div class="step-icon">🔍</div>
+
+                    <h3>Analyze</h3>
+
+                    <p>
+                        The browser processes the uploaded image.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">03</div>
+
+                    <div class="step-icon">🥞</div>
+
+                    <h3>Estimate Layers</h3>
+
+                    <p>
+                        The system estimates the visible layer structure.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">04</div>
+
+                    <div class="step-icon">📊</div>
+
+                    <h3>Get Results</h3>
+
+                    <p>
+                        View layers, dimensions, accuracy and quality.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HISTORY -->
+        <section id="history" class="section history-section">
+
+            <div class="section-heading history-heading">
+
+                <div>
+                    <div class="section-label">
+                        <span>03</span> ANALYSIS HISTORY
+                    </div>
+
+                    <h2>
+                        Previous Porottas
+                    </h2>
+
+                    <p>
+                        Your previous analysis results are saved in this browser.
+                    </p>
+                </div>
+
+                <button id="clearHistoryBtn" class="clear-button">
+                    Clear History
+                </button>
+
+            </div>
+
+
+            <div class="history-container">
+
+                <div id="historyList">
+
+                    <div class="empty-history">
+                        <div>📊</div>
+                        <h3>No analysis history yet</h3>
+                        <p>
+                            Analyze your first porotta to see it here.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="section about-section">
+
+            <div class="about-card">
+
+                <div class="about-icon">
+                    🥞
+                </div>
+
+                <div>
+
+                    <div class="section-label">
+                        ABOUT THE PROJECT
+                    </div>
+
+                    <h2>
+                        Turning Porotta Layers Into Data
+                    </h2>
+
+                    <p>
+                        Porotta Layer Analyzer is a front-end project that
+                        demonstrates how image uploads, browser-based
+                        processing, visualization and local storage can be
+                        combined into an interactive food-analysis experience.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>LocalStorage</span>
+                        <span>Image Processing</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            🥞 Porotta<span>AI</span>
+        </div>
+
+        <p>
+            How many layers does your porotta have?
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#analyzer">Analyzer</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#history">History</a>
+        </div>
+
+        <div class="copyright">
+            © 2026 Porotta Layer Analyzer
+        </div>
+
+    </footer>
+
+
+    <!-- TOAST -->
+    <div id="toast" class="toast">
+        <span id="toastIcon">✓</span>
+        <span id="toastMessage">Done</span>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
