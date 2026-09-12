@@ -109,6 +109,12 @@ https://drive.google.com/file/d/1HVwXt3NYQQbMxJkU2ojt-bQ6L-KuOwLq/view?usp=drive
 Team Contributions
 
 
-**[Thoufeek T]: [css and java script]**
+**[Thoufeek T]:
+Frontend design and UI/UX
+HTML/CSS development and responsive animations
+Image upload and result display
 
-**[Adhil Shemir]: [html and testing]**
+**[Adhil Shemir]:
+JavaScript functionality and layer prediction logic
+Analysis, accuracy, and quality calculation
+History, testing, and debugging
