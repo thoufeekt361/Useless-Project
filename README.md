@@ -80,11 +80,14 @@ For Software:
 
 Screenshots (Add at least 3)
 
-![Screenshot42](Add screenshot 1 here with proper name) Add caption explaining what this shows
+<img width="1920" height="1080" alt="Home Page" src="https://github.com/user-attachments/assets/092aa944-6948-4962-8950-292270c708c8" />
 
-![Screenshot2](Add screenshot 2 here with proper name) Add caption explaining what this shows
 
-![Screenshot3](Add screenshot 3 here with proper name) Add caption explaining what this shows
+<img width="1920" height="1080" alt="data uploading page" src="https://github.com/user-attachments/assets/594989d1-2df0-4911-8622-4758224f7f68" />
+
+
+<img width="1920" height="1080" alt="data flow" src="https://github.com/user-attachments/assets/36c7e443-af81-40c1-b2e8-c6665f466409" />
+
 
 Diagrams
 
