@@ -105,11 +105,10 @@ Video
 
 https://drive.google.com/file/d/1HVwXt3NYQQbMxJkU2ojt-bQ6L-KuOwLq/view?usp=drivesdk
 
-Additional Demos
-
-[Add any extra demo materials/links]
 
 Team Contributions
 
-[Thoufeek T]: [css and java script]
-[Adhil Shemir]: [html and testing]
+
+**[Thoufeek T]: [css and java script]**
+
+**[Adhil Shemir]: [html and testing]**
