@@ -78,20 +78,24 @@ Project Documentation
 
 For Software:
 
-Screenshots (Add at least 3)
-
-<img width="1920" height="1080" alt="Home Page" src="https://github.com/user-attachments/assets/092aa944-6948-4962-8950-292270c708c8" />
-
-
-<img width="1920" height="1080" alt="data uploading page" src="https://github.com/user-attachments/assets/594989d1-2df0-4911-8622-4758224f7f68" />
+HOME PAGE
+<img width="300" height="250" center alt="Home Page" src="https://github.com/user-attachments/assets/092aa944-6948-4962-8950-292270c708c8" />
 
 
-<img width="1920" height="1080" alt="data flow" src="https://github.com/user-attachments/assets/36c7e443-af81-40c1-b2e8-c6665f466409" />
+
+DATA UPLOADING PAGE
+<img width="300" height="250" center alt="data uploading page" src="https://github.com/user-attachments/assets/594989d1-2df0-4911-8622-4758224f7f68" />
+
+
+
+DATA PROCESSING
+<img width="300" height="250" center alt="data flow" src="https://github.com/user-attachments/assets/36c7e443-af81-40c1-b2e8-c6665f466409" />
 
 
 Diagrams
 
-![Workflow](Add your workflow/architecture diagram here) Add caption explaining your workflow
+<img width="300" height="250" center alt="image" src="https://github.com/user-attachments/assets/b7448556-cf50-416c-ac68-8260b6b0a2c4" />
+
 
 
 Project Demo
