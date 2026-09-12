@@ -1,85 +1,107 @@
-# 🥞 Porotta Layer Analyzer
+# Porotta Layer Analyzer 🎯
 
-## 📌 About the Project
+## Basic Details
 
-**Porotta Layer Analyzer** is a fun and interactive web-based project designed to analyze a photo of a Kerala-style porotta and estimate its visible layers. The application provides an engaging way to explore the structure and appearance of a porotta using a simple and attractive web interface.
+Team Name:Asthec
 
-Users can upload a porotta image, preview the uploaded photo, run the analysis, and view information such as the estimated number of layers, dimensions, prediction accuracy, and overall porotta quality.
+## Team Members
 
-The project is developed completely using **HTML, CSS, and JavaScript**, without requiring any external backend or hardware components.
+**Team Lead:** Thoufeek T - Carmel College of Engineering and Technology, Alappuzha  
+**Member 2:** Adhil Shemir - Carmel College of Engineering and Technology, Alappuzha  
+ 
 
----
+## Project Description
 
-## 🎯 Project Objective
+Porotta Layer Analyzer is a fun and interactive web application that analyzes an uploaded porotta image and estimates the number of visible layers. It also displays estimated dimensions, prediction accuracy, and overall porotta quality.
 
-The main objective of this project is to create a simple and entertaining image-analysis application that demonstrates how frontend technologies can be used to process uploaded images and generate meaningful analysis results.
+The project provides an attractive interface with image uploading, image preview, analysis results, and a history section for previous results.
 
-It also provides a practical example of:
+## The Problem (that doesn't exist)
 
-- Image uploading and previewing
-- JavaScript-based image processing
-- Dynamic result generation
-- Local browser data storage
-- Responsive web design
-- Interactive UI animations
+Have you ever looked at a porotta and wondered, "How many layers does this porotta actually have?"
 
----
+Nobody really needs to know the exact number of porotta layers, but this completely unnecessary question inspired us to build a fun solution for it.
 
-## ✨ Features
+## The Solution (that nobody asked for)
 
-### 📤 Porotta Image Upload
-Users can upload a photo of a porotta directly from their device.
+We created the **Porotta Layer Analyzer**, where users can upload a photo of a porotta and get an estimated layer count.
 
-### 🔄 Upload Another Photo
-After uploading one image, users can upload additional porotta photos and compare different results.
+The website processes the uploaded image and displays the estimated layers, dimensions, accuracy, and quality. Users can also upload another photo and keep track of previous analysis results.
 
-### 🔍 Layer Prediction
-The application analyzes the uploaded image and provides an estimated number of visible porotta layers.
+## Technical Details
 
-### 📏 Dimension Analysis
-The application displays estimated dimensions of the uploaded porotta.
+## Technologies/Components Used
 
-### 🎯 Accuracy Score
-A prediction accuracy percentage is displayed along with the estimated result.
+### For Software:
 
-### ⭐ Porotta Quality
-The application provides an overall quality assessment based on the analysis.
+**Languages used:**
+- HTML5
+- CSS3
+- JavaScript
 
-### 📊 Analysis History
-Previous analysis results are stored in the browser and displayed in a history table.
+**Frameworks used:**
+- None
 
-### 🗑️ Delete History
-Individual analysis records can be removed from the history.
+**Libraries used:**
+- None
 
-### 🧹 Clear History
-All saved analysis records can be cleared at once.
+**Tools used:**
+- Visual Studio Code
+- Git
+- GitHub
+- Microsoft Edge
+- Live Server
 
-### 🎨 Attractive UI
-The website includes a modern dark-themed interface with glassmorphism effects, gradients, animations, and interactive cards.
+ For Hardware:
 
-### 🌀 3D Porotta Animation
-The home page includes a CSS-based 3D animated porotta visual without requiring a separate image asset.
+- No hardware components used
+- No hardware specifications required
+- No hardware tools required
 
-### 📱 Responsive Design
-The website is designed to work across desktops, tablets, and mobile devices.
+Implementation
 
----
+For Software:
 
-## 🛠️ Technologies Used
+The project is developed using HTML, CSS, and JavaScript.
 
-- **HTML5** – Website structure
-- **CSS3** – Styling, animations, responsive design, and 3D effects
-- **JavaScript** – Image handling, analysis logic, dynamic results, and history management
-- **LocalStorage** – Saving previous analysis results in the browser
+HTML is used to create the webpage structure, CSS is used for styling, responsive design, animations, and 3D visual effects, while JavaScript handles image uploading, image preview, analysis logic, result generation, and analysis history.
 
----
+The application works directly in the browser and does not require any hardware components.
 
-## 📂 Project Structure
+Installation
+no specific command
 
-```text
-Porotta-Layer-Analyzer/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+Run
+no specific command
+
+Project Documentation
+
+For Software:
+
+Screenshots (Add at least 3)
+
+![Screenshot1](Add screenshot 1 here with proper name) Add caption explaining what this shows
+
+![Screenshot2](Add screenshot 2 here with proper name) Add caption explaining what this shows
+
+![Screenshot3](Add screenshot 3 here with proper name) Add caption explaining what this shows
+
+Diagrams
+
+![Workflow](Add your workflow/architecture diagram here) Add caption explaining your workflow
+
+
+Project Demo
+
+Video
+
+https://drive.google.com/file/d/1HVwXt3NYQQbMxJkU2ojt-bQ6L-KuOwLq/view?usp=drivesdk
+
+Additional Demos
+
+[Add any extra demo materials/links]
+
+Team Contributions
+
+[Thoufeek T]: [css and java script]
+[Adhil Shemir]: [html and testing]
